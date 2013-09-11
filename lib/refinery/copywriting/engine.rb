@@ -20,11 +20,6 @@ module Refinery
       end
 
       initializer "register refinery_copywriting plugin", :after => :set_routes_reloader do |app|
-        ::Refinery::Pages::Tab.register do |tab|
-          tab.name = ::I18n.t(:'refinery.plugins.refinerycms_copywriting.title')
-          tab.partial = '/refinery/pages/admin/tabs/copywriting'
-        end
-
         Refinery::Plugin.register do |plugin|
           plugin.pathname = root
           plugin.name = 'refinerycms_copywriting'
