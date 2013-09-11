@@ -1,0 +1,24 @@
+da:
+  refinery:
+    plugins:
+      refinerycms_copywriting:
+        title: Tekster
+    copywriting:
+      admin:
+        phrases:
+          locale_filters:
+            change_language: Skift sprog
+          scope_filters:
+            filter_by_scope: Filtrer efter position
+            filtered_by: "Filtreret efter '%{filter_scope}'"
+            clear_scope_filter: Fjern
+          records:
+            no_items_yet: Der er ingen tekster endnu
+          phrase:
+            edit: Rediger tekst
+            delete: Fjern tekst
+    pages:
+      admin:
+        tabs:
+          copywriting:
+            no_copywriting_yet: Der er ingen tekster for denne side
